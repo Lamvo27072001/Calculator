@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, cyan, rgb(66, 245, 147));
+}
+
+.container {
+    margin: 80px auto;
+    height: 575px;
+    width: 340px;
+}
+
+.table_result {
+    height: 20%;
+    width: 100%;
+    background-color: black;
+}
+
+.function {
+    height: 80%;
+    width: 100%;
+    background-color: aqua;
+}
+
+.first_row {
+    display: grid;
+    grid-template-columns: repeat(4, 85px);
+    grid-template-rows: minmax(100px, auto)
+}
+
+.first_row>button {
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+    height: 100%;
+    font-weight: 700;
+}
+
+.first_row .big {
+    grid-column: span 2;
+}
+
+.number_button {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: repeat(4, 85px);
+    grid-template-rows: minmax(100px, auto) repeat(3, 87px);
+}
+
+.number_button>button {
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid white;
+    outline: none;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, .75);
+    height: 100%;
+}
+
+.first_row button:hover {
+    background-color: white;
+}
+
+.number_button .big {
+    grid-column: span 2;
+}
+
+.number_button button:hover {
+    background-color: white;
+}
+
+.table_result {
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: end;
+    padding: 10px;
+}
+
+#operand {
+    color: aliceblue;
+    font-size: 25px;
+}
+
+#result {
+    color: aliceblue;
+    font-size: 35px;
+    margin-top: 20px;
+}
