@@ -20,3 +20,5 @@ for (let operate of operators) {
 clear.onclick = () => {
     display.innerHTML = ""
 }
+
+/////
